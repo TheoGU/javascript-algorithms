@@ -16,6 +16,7 @@ export default class BloomFilter {
    **
    **
    **
+   **
    * @param {string} item
    */
   insert(item) {
