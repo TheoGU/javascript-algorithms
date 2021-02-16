@@ -112,6 +112,7 @@ export default class BloomFilter {
 
   /**
    * @param {string} item
+   * @param {string} item
    * @return {number}
    */
   hash3(item) {
