@@ -10,6 +10,7 @@ export default class BloomFilter {
   }
 
   /**
+   **
    * @param {string} item
    */
   insert(item) {
@@ -50,7 +51,11 @@ export default class BloomFilter {
     const storage = [];
 
     // Initialize all indexes to false
-    for (let storageCellIndex = 0; storageCellIndex < size; storageCellIndex += 1) {
+    for (
+      let storageCellIndex = 0;
+      storageCellIndex < size;
+      storageCellIndex += 1
+    ) {
       storage.push(false);
     }
 
@@ -122,10 +127,6 @@ export default class BloomFilter {
    * @return {number[]}
    */
   getHashValues(item) {
-    return [
-      this.hash1(item),
-      this.hash2(item),
-      this.hash3(item),
-    ];
+    return [this.hash1(item), this.hash2(item), this.hash3(item)];
   }
 }
